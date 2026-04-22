@@ -1,11 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>API Full Stack Project</title>
-  </head>
-  <body>
-    <!-- You code goes here-->
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Car Guessing Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Car Guessing Game</h1>
+  </header>
+
+  <main>
+    <section id="game-container">
+      <button id="start-game-btn">Start Game</button>
+
+      <section id="clue-box">
+        <h2>Car Clues</h2>
+        <p id="clue-year">Year: ______</p>
+        <p id="clue-fuel">Fuel Type: ______</p>
+        <p id="clue-cylinders">Cylinders: ______</p>
+        <p id="clue-transmission">Transmission: ______</p>
+      </section>
+
+      <section id="guess-section">
+        <label for="guess-input">Enter your guess (car model):</label>
+        <input type="text" id="guess-input" placeholder="e.g. Civic, Mustang">
+        <button id="submit-guess-btn">Submit Guess</button>
+      </section>
+
+      <section id="result-section">
+        <p id="result-message">Your result will appear here.</p>
+      </section>
+
+      <section id="score-section">
+        <h2>Score</h2>
+        <p id="score-display">Score: 0</p>
+        <p id="rounds-display">Rounds Played: 0</p>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>Powered by API Ninjas Cars API</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
